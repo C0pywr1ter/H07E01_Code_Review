@@ -19,30 +19,6 @@ public class Student extends Person{
        this.matrNr = matrNr;
     }
 
-    public String getMatrNr() {
-        return matrNr;
-    }
-
-    public void setMatrNr(String matrNr) {
-        this.matrNr = matrNr;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public int getSemester() {
         return semester;
     }
@@ -50,13 +26,12 @@ public class Student extends Person{
     public void increaseSemester() {
         this.semester ++;
     }
-
-    public String getEmail() {
-        return email;
+    public String getMatrNr() {
+        return matrNr;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setMatrNr(String matrNr) {
+        this.matrNr = matrNr;
     }
 
     @Override
