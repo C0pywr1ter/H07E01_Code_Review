@@ -2,10 +2,13 @@ package de.tum.ise.entities;
 
 public class Professor {
 
+
+
+
+
         private String matrNr;
         private String name;
         private int age;
-        private int semester;
         private String email;
 
         // TODO 1.1 : Bob is not good at Object Orientated Programming - fix it
@@ -13,11 +16,11 @@ public class Professor {
 
         // TODO 1.2 : Refactoring - Apply the template method design pattern on Student and Professor to prevent duplicated code
 
-        public Professor(String name, int age, String email, String matrNr, int semester) {
+        public Professor(String name, int age, String email, String matrNr) {
             this.matrNr = matrNr;
             this.name = name;
             this.age = age;
-            this.semester = semester;
+
             this.email = email;
         }
 
@@ -45,13 +48,7 @@ public class Professor {
             this.age = age;
         }
 
-        public int getSemester() {
-            return semester;
-        }
 
-        public void increaseSemester() {
-            this.semester ++;
-        }
 
         public String getEmail() {
             return email;
@@ -67,10 +64,10 @@ public class Professor {
                     "matrNr='" + matrNr + '\'' +
                     ", name='" + name + '\'' +
                     ", age=" + age +
-                    ", semester=" + semester +
+
                     ", email='" + email + '\'' +
                     '}';
         }
     }
 
-
+}
