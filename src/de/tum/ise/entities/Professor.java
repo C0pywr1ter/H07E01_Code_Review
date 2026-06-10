@@ -6,7 +6,7 @@ public class Professor {
 
 
 
-        private String matrNr;
+        private String persNr;
         private String name;
         private int age;
         private String email;
@@ -16,20 +16,20 @@ public class Professor {
 
         // TODO 1.2 : Refactoring - Apply the template method design pattern on Student and Professor to prevent duplicated code
 
-        public Professor(String name, int age, String email, String matrNr) {
-            this.matrNr = matrNr;
+        public Professor(String name, int age, String email, String persNr) {
+            this.persNr = persNr;
             this.name = name;
             this.age = age;
 
             this.email = email;
         }
 
-        public String getMatrNr() {
-            return matrNr;
+        public String getPersNr() {
+            return persNr;
         }
 
-        public void setMatrNr(String matrNr) {
-            this.matrNr = matrNr;
+        public void setPersNr(String persNr) {
+            this.persNr = persNr;
         }
 
         public String getName() {
