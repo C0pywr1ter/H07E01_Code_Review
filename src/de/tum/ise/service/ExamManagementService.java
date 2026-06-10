@@ -5,6 +5,8 @@ import de.tum.ise.entities.Student;
 import de.tum.ise.repository.ExamRepository;
 import de.tum.ise.repository.StudentRepository;
 
+import java.util.NoSuchElementException;
+
 public class ExamManagementService {
 
     private final ExamRepository examRepository;
@@ -18,6 +20,9 @@ public class ExamManagementService {
     public Student getStudentByMatrNr(String matrNr) {
 
         // TODO 2.1 : throw NoSuchElementException in case the student was not found
+        if(studentRepository.getStudentByMatrNr(matrNr) == null) {
+            throw new NoSuchElementException("Student not found");
+        }
 
         return studentRepository.getStudentByMatrNr(matrNr);
     }
@@ -36,18 +41,15 @@ public class ExamManagementService {
 
 
     public Exam getExamById(Long id) {
-        // TODO 2.2 : Implement me - don't forget to throw NoSuchElementException if exam cannot be found
-        throw new RuntimeException("Not yet implemented");
+        return examRepository.getExamById(id);
     }
 
     public void registerExam(Exam exam) {
-        // TODO 2.2 : Implement me
-        throw new RuntimeException("Not yet implemented");
+       examRepository.registerExam(exam);
     }
 
     public void removeExamById(Long id) {
-        // TODO 2.2 : Implement me
-        throw new RuntimeException("Not yet implemented");
+       examRepository.removeExamById(id);
     }
 
     // Helper function
