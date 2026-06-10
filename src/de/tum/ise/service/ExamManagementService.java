@@ -41,6 +41,9 @@ public class ExamManagementService {
 
 
     public Exam getExamById(Long id) {
+        if(examRepository.getExamById(id) == null) {
+            throw new NoSuchElementException("Exam not found");
+        }
         return examRepository.getExamById(id);
     }
 
