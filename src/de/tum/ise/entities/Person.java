@@ -1,9 +1,9 @@
 package de.tum.ise.entities;
 
 public abstract class Person {
-     String name;
-     int age;
-     String email;
+    protected String name;
+    protected int age;
+    protected String email;
 
     public Person(String name, int age, String email) {
         this.name = name;
