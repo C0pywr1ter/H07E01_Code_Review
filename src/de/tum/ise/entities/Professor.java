@@ -61,7 +61,7 @@ public class Professor {
         @Override
         public String toString() {
             return "Student{" +
-                    "matrNr='" + matrNr + '\'' +
+                    "matrNr='" + persNr + '\'' +
                     ", name='" + name + '\'' +
                     ", age=" + age +
 
